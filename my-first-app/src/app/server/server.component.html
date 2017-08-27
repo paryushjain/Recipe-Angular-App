@@ -1,6 +1,0 @@
-<input type="text" class="form-control" [(ngModel)]="serverName" >
-<p>{{ serverName }}</p>
-<div [ngStyle]="{backgroundColor: getColor()}" style="width:10px; height:10px; border-radius:50%; border:1px solid black"></div> <p>{{ serverSays }}</p>
-<button class="btn btn-primary" [disabled]="allowServer" (click)="onCreateServer()" >Click Me!</button>
-<p *ngIf="serverOnOff" [innerText]="serverStatus"></p>
-<app-servers *ngFor="let server of servers"></app-servers>
